@@ -4,7 +4,7 @@ import "dotenv/config"
 
 main().catch(err=> console.log(err))
 async function main (){
-    await mongoose.connect(process.env.MONGO_URL);
+    await mongoose.connect("mongodb+srv://nooricechuang:eunice143@cluster0.z6c7v65.mongodb.net/quotes?retryWrites=true&w=majority");
     console.log("mongoose is connected!")
 }
 
