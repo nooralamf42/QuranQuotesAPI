@@ -5,7 +5,5 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/app.js" },
-    { "src": "/quranquotes", "dest": "/app.js" },
-    { "src": "/quranquotes/(.*)", "dest": "/app.js" }
   ]
 }
