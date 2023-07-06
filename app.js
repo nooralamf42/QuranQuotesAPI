@@ -4,7 +4,7 @@ import "dotenv/config";
 
 const app = Express();
 app.use(Express.json())
-app.use("/QuranQuotes", myRouter);
+app.use("/api", myRouter);
 app.get("/",(req,res)=>{
     res.status(200).send(`<!DOCTYPE html>
     <html>
