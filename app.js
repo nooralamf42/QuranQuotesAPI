@@ -4,8 +4,8 @@ import "dotenv/config";
 
 const app = Express();
 app.use(Express.json())
-app.status(200).get("/",(req,res)=>{
-    res.send(`<!DOCTYPE html>
+app.get("/",(req,res)=>{
+    res.status(200).send(`<!DOCTYPE html>
     <html>
     <head>
       <title>Quran Quotes API Homepage</title>
