@@ -4,6 +4,7 @@ import "dotenv/config";
 
 const app = Express();
 app.use(Express.json())
+app.use("/QuranQuotes", myRouter);
 app.get("/",(req,res)=>{
     res.status(200).send(`<!DOCTYPE html>
     <html>
@@ -106,5 +107,4 @@ app.get("/",(req,res)=>{
     `)
     })
 //this is not good practice to send html page like this
-app.use("/QuranQuotes", myRouter);
 app.listen(process.env.PORT, ()=>console.log(`Server is running at port: ${process.env.PORT}`)) ;
