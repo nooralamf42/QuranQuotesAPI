@@ -5,7 +5,7 @@ import "dotenv/config";
 const app = Express();
 app.use(Express.json())
 app.status(200).get("/",(req,res)=>{
-            res.send("
+            res.send('
                      <!DOCTYPE html>
 <html>
 <head>
@@ -104,8 +104,7 @@ app.status(200).get("/",(req,res)=>{
   </footer>
 </body>
 </html>
-
-                     ")
+                     ')
         });
 
 //this is not good practice to send html page like this
